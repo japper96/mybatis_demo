@@ -4,6 +4,12 @@
         "http://mybatis.org/dtd/mybatis-3-config.dtd">
 
 <configuration>
+    <!--<settings>-->
+        <!--&lt;!&ndash;开启驼峰匹配&ndash;&gt;-->
+        <!--<setting name="mapUnderscoreToCamelCase" value="true"/>-->
+        <!--&lt;!&ndash;开启二级缓存,全局总开关，这里关闭，mapper中开启了也没用&ndash;&gt;-->
+        <!--<setting name="cacheEnabled" value="false"/>-->
+    <!--</settings>-->
     <properties>
         <property name="driver" value="com.mysql.jdbc.Driver"/>
         <property name="url"
@@ -38,7 +44,9 @@
     </environments>
 
     <mappers>
-        <mapper resource="mappers/MyMapper.xml"/>
+        <!--<mapper resource="mappers/MyMapper.xml"/>-->
+        <!--<mapper resource="mappers/UserDaoMapper.xml"/>-->
+        <mapper resource="mappers/UserMapper.xml"/>
     </mappers>
 
 </configuration>
